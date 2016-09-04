@@ -1,0 +1,5 @@
+.DS_Store
+.rbenv-*
+Gemfile.lock
+data/
+tmp/

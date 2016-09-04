@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/cli"
+require_relative "../lib/worker"
+
+config = CLI.parseCLIOptions(ARGV)
+
+unless config.nil?
+  Worker.process(config[:filename], config[:department], config[:rooms], config[:outputPath])
+end
